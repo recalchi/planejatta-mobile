@@ -1,0 +1,459 @@
+[   +2 ms] executing: [/Users/renanrecalchi/Documents/flutter/] git -c log.showSignature=false log -n 1 --pretty=format:%H
+[  +28 ms] Exit code 0 from: git -c log.showSignature=false log -n 1 --pretty=format:%H
+[        ] f468f3366c26a5092eb964a230ce7892fda8f2f8
+[        ] executing: [/Users/renanrecalchi/Documents/flutter/] git tag --points-at f468f3366c26a5092eb964a230ce7892fda8f2f8
+[  +35 ms] Exit code 0 from: git tag --points-at f468f3366c26a5092eb964a230ce7892fda8f2f8
+[        ] 3.10.6
+[   +2 ms] executing: [/Users/renanrecalchi/Documents/flutter/] git rev-parse --abbrev-ref HEAD
+[  +19 ms] Exit code 0 from: git rev-parse --abbrev-ref HEAD
+[        ] stable
+[        ] executing: sw_vers -productName
+[  +14 ms] Exit code 0 from: sw_vers -productName
+[        ] macOS
+[        ] executing: sw_vers -productVersion
+[  +14 ms] Exit code 0 from: sw_vers -productVersion
+[        ] 13.4
+[        ] executing: sw_vers -buildVersion
+[  +14 ms] Exit code 0 from: sw_vers -buildVersion
+[        ] 22F66
+[        ] executing: uname -m
+[   +4 ms] Exit code 0 from: uname -m
+[        ] x86_64
+[   +5 ms] executing: sysctl hw.optional.arm64
+[   +4 ms] Exit code 1 from: sysctl hw.optional.arm64
+[        ] sysctl: unknown oid 'hw.optional.arm64'
+[   +7 ms] executing: [/Users/renanrecalchi/Documents/flutter/] git rev-parse --abbrev-ref --symbolic @{upstream}
+[  +21 ms] Exit code 0 from: git rev-parse --abbrev-ref --symbolic @{upstream}
+[        ] origin/stable
+[        ] executing: [/Users/renanrecalchi/Documents/flutter/] git ls-remote --get-url origin
+[  +21 ms] Exit code 0 from: git ls-remote --get-url origin
+[        ] https://github.com/flutter/flutter.git
+[  +92 ms] executing: sysctl hw.optional.arm64
+[   +5 ms] Exit code 1 from: sysctl hw.optional.arm64
+[        ] sysctl: unknown oid 'hw.optional.arm64'
+[        ] executing: xcrun xcodebuild -version
+[ +451 ms] Exit code 0 from: xcrun xcodebuild -version
+[   +1 ms] Xcode 14.3.1
+           Build version 14E300c
+[   +3 ms] executing: xcrun xcdevice list --timeout 5
+[   +6 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[   +2 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +46 ms] executing: /Users/renanrecalchi/Library/Android/sdk/platform-tools/adb devices -l
+[        ] executing: xcrun xcdevice list --timeout 2
+[   +2 ms] xcrun simctl list devices booted iOS --json
+[        ] executing: xcrun simctl list devices booted iOS --json
+[   +3 ms] executing: xcrun simctl list devices booted
+[ +146 ms] Exit code 0 from: xcrun simctl list devices booted
+[        ] == Devices ==
+           -- iOS 16.4 --
+               iPhone 14 Pro (530F6732-A861-4147-9FFD-71BF3BB1F4BD) (Booted)
+[  +59 ms] List of devices attached
+           R9QMB00BRNP            device usb:337641472X product:a20sub model:SM_A207M device:a20s transport_id:1
+[ +179 ms] {
+             "devices" : {
+               "com.apple.CoreSimulator.SimRuntime.iOS-16-4" : [
+                 {
+                   "lastBootedAt" : "2023-07-19T23:32:48Z",
+                   "dataPath" : "\/Users\/renanrecalchi\/Library\/Developer\/CoreSimulator\/Devices\/530F6732-A861-4147-9FFD-71BF3BB1F4BD\/data",
+                   "dataPathSize" : 1225818112,
+                   "logPath" : "\/Users\/renanrecalchi\/Library\/Logs\/CoreSimulator\/530F6732-A861-4147-9FFD-71BF3BB1F4BD",
+                   "udid" : "530F6732-A861-4147-9FFD-71BF3BB1F4BD",
+                   "isAvailable" : true,
+                   "logPathSize" : 315392,
+                   "deviceTypeIdentifier" : "com.apple.CoreSimulator.SimDeviceType.iPhone-14-Pro",
+                   "state" : "Booted",
+                   "name" : "iPhone 14 Pro"
+                 }
+               ]
+             }
+           }
+[+2787 ms] [
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone14,6",
+               "identifier" : "65579537-649F-47C0-83BF-525DD5F597BA",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.iphone-se3-1",
+               "modelName" : "iPhone SE (3rd generation)",
+               "name" : "iPhone SE (3rd generation)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad13,18",
+               "identifier" : "6BFF75D9-4736-40F3-92EB-7692E63B79ED",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.ipad-10-1",
+               "modelName" : "iPad (10th generation)",
+               "name" : "iPad (10th generation)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad14,3",
+               "identifier" : "DE75F1F1-6552-4B3F-9E1F-DA43C2BFB073",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.ipad-pro-11-4th-1",
+               "modelName" : "iPad Pro (11-inch) (4th generation)",
+               "name" : "iPad Pro (11-inch) (4th generation)",
+               "ignored" : false
+             },
+             {
+               "ignored" : false,
+               "modelCode" : "iMacPro1,1",
+               "simulator" : false,
+               "modelName" : "iMac Pro",
+               "operatingSystemVersion" : "13.4 (22F66)",
+               "identifier" : "579EA9C5-7135-54AB-859A-62DA6147BEB7",
+               "platform" : "com.apple.platform.macosx",
+               "architecture" : "x86_64h",
+               "interface" : "usb",
+               "available" : true,
+               "name" : "My Mac",
+               "modelUTI" : "com.apple.imacpro-2017"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone14,8",
+               "identifier" : "FA72E775-EEBE-45E4-B98D-692F35B5AE11",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.iphone-14-plus-1",
+               "modelName" : "iPhone 14 Plus",
+               "name" : "iPhone 14 Plus",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone15,2",
+               "identifier" : "530F6732-A861-4147-9FFD-71BF3BB1F4BD",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.iphone-14-pro-1",
+               "modelName" : "iPhone 14 Pro",
+               "name" : "iPhone 14 Pro",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad14,1",
+               "identifier" : "94608A36-6CCD-41D4-8B43-19FA2BCB0AC8",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.ipad-mini6-1",
+               "modelName" : "iPad mini (6th generation)",
+               "name" : "iPad mini (6th generation)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone14,7",
+               "identifier" : "34B4F4FF-3AC9-4EC8-AAD5-9B82C3761F76",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.iphone-14-1",
+               "modelName" : "iPhone 14",
+               "name" : "iPhone 14",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone15,3",
+               "identifier" : "191A8921-4167-4B5C-BB9E-3C4C316F0636",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.iphone-14-pro-max-1",
+               "modelName" : "iPhone 14 Pro Max",
+               "name" : "iPhone 14 Pro Max",
+               "ignored" : false
+             },
+             {
+               "ignored" : false,
+               "modelCode" : "iPhone11,8",
+               "simulator" : false,
+               "modelName" : "iPhone XR",
+               "error" : {
+                 "code" : -13,
+                 "failureReason" : "",
+                 "underlyingErrors" : [
+                   {
+                     "code" : 4,
+                     "failureReason" : "",
+                     "description" : "iPhone de Renan is locked.",
+                     "recoverySuggestion" : "To use iPhone de Renan with Xcode, unlock it.",
+                     "domain" : "DVTDeviceIneligibilityErrorDomain"
+                   }
+                 ],
+                 "description" : "iPhone de Renan is not connected",
+                 "recoverySuggestion" : "Xcode will continue when iPhone de Renan is connected and unlocked.",
+                 "domain" : "com.apple.platform.iphoneos"
+               },
+               "operatingSystemVersion" : "16.5 (20F66)",
+               "identifier" : "00008020-000C05941468402E",
+               "platform" : "com.apple.platform.iphoneos",
+               "architecture" : "arm64e",
+               "interface" : "usb",
+               "available" : false,
+               "name" : "iPhone de Renan",
+               "modelUTI" : "com.apple.iphone-xr-1"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad13,17",
+               "identifier" : "22AA1972-D41F-4949-A760-41302EC446AB",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.ipad-air5-1",
+               "modelName" : "iPad Air (5th generation)",
+               "name" : "iPad Air (5th generation)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad14,5",
+               "identifier" : "5833EF70-3EC8-486C-B75F-061D0093DCD8",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.ipad-pro-12point9-6th-1",
+               "modelName" : "iPad Pro (12.9-inch) (6th generation)",
+               "name" : "iPad Pro (12.9-inch) (6th generation)",
+               "ignored" : false
+             }
+           ]
+
+           2023-07-19 17:36:55.674 xcdevice[25181:187462] DVTCoreDeviceEnabledState: DVTCoreDeviceEnabledState_Disabled set via user default (DVTEnableCoreDevice=disabled)
+[   +2 ms] Error: iPhone de Renan is not connected. Xcode will continue when iPhone de Renan is connected and unlocked. (code -13)
+[   +4 ms] /Users/renanrecalchi/Library/Android/sdk/platform-tools/adb -s R9QMB00BRNP shell getprop
+[  +83 ms] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[   +2 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +77 ms] Checking for wireless devices...
+[+2819 ms] [
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone14,6",
+               "identifier" : "65579537-649F-47C0-83BF-525DD5F597BA",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.iphone-se3-1",
+               "modelName" : "iPhone SE (3rd generation)",
+               "name" : "iPhone SE (3rd generation)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad13,18",
+               "identifier" : "6BFF75D9-4736-40F3-92EB-7692E63B79ED",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.ipad-10-1",
+               "modelName" : "iPad (10th generation)",
+               "name" : "iPad (10th generation)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad14,3",
+               "identifier" : "DE75F1F1-6552-4B3F-9E1F-DA43C2BFB073",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.ipad-pro-11-4th-1",
+               "modelName" : "iPad Pro (11-inch) (4th generation)",
+               "name" : "iPad Pro (11-inch) (4th generation)",
+               "ignored" : false
+             },
+             {
+               "ignored" : false,
+               "modelCode" : "iMacPro1,1",
+               "simulator" : false,
+               "modelName" : "iMac Pro",
+               "operatingSystemVersion" : "13.4 (22F66)",
+               "identifier" : "579EA9C5-7135-54AB-859A-62DA6147BEB7",
+               "platform" : "com.apple.platform.macosx",
+               "architecture" : "x86_64h",
+               "interface" : "usb",
+               "available" : true,
+               "name" : "My Mac",
+               "modelUTI" : "com.apple.imacpro-2017"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone14,8",
+               "identifier" : "FA72E775-EEBE-45E4-B98D-692F35B5AE11",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.iphone-14-plus-1",
+               "modelName" : "iPhone 14 Plus",
+               "name" : "iPhone 14 Plus",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone15,2",
+               "identifier" : "530F6732-A861-4147-9FFD-71BF3BB1F4BD",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.iphone-14-pro-1",
+               "modelName" : "iPhone 14 Pro",
+               "name" : "iPhone 14 Pro",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad14,1",
+               "identifier" : "94608A36-6CCD-41D4-8B43-19FA2BCB0AC8",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.ipad-mini6-1",
+               "modelName" : "iPad mini (6th generation)",
+               "name" : "iPad mini (6th generation)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone14,7",
+               "identifier" : "34B4F4FF-3AC9-4EC8-AAD5-9B82C3761F76",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.iphone-14-1",
+               "modelName" : "iPhone 14",
+               "name" : "iPhone 14",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPhone15,3",
+               "identifier" : "191A8921-4167-4B5C-BB9E-3C4C316F0636",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.iphone-14-pro-max-1",
+               "modelName" : "iPhone 14 Pro Max",
+               "name" : "iPhone 14 Pro Max",
+               "ignored" : false
+             },
+             {
+               "ignored" : false,
+               "modelCode" : "iPhone11,8",
+               "simulator" : false,
+               "modelName" : "iPhone XR",
+               "error" : {
+                 "code" : -13,
+                 "failureReason" : "",
+                 "underlyingErrors" : [
+                   {
+                     "code" : 4,
+                     "failureReason" : "",
+                     "description" : "iPhone de Renan is locked.",
+                     "recoverySuggestion" : "To use iPhone de Renan with Xcode, unlock it.",
+                     "domain" : "DVTDeviceIneligibilityErrorDomain"
+                   }
+                 ],
+                 "description" : "iPhone de Renan is not connected",
+                 "recoverySuggestion" : "Xcode will continue when iPhone de Renan is connected and unlocked.",
+                 "domain" : "com.apple.platform.iphoneos"
+               },
+               "operatingSystemVersion" : "16.5 (20F66)",
+               "identifier" : "00008020-000C05941468402E",
+               "platform" : "com.apple.platform.iphoneos",
+               "architecture" : "arm64e",
+               "interface" : "usb",
+               "available" : false,
+               "name" : "iPhone de Renan",
+               "modelUTI" : "com.apple.iphone-xr-1"
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad13,17",
+               "identifier" : "22AA1972-D41F-4949-A760-41302EC446AB",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.ipad-air5-1",
+               "modelName" : "iPad Air (5th generation)",
+               "name" : "iPad Air (5th generation)",
+               "ignored" : false
+             },
+             {
+               "simulator" : true,
+               "operatingSystemVersion" : "16.4 (20E247)",
+               "available" : true,
+               "platform" : "com.apple.platform.iphonesimulator",
+               "modelCode" : "iPad14,5",
+               "identifier" : "5833EF70-3EC8-486C-B75F-061D0093DCD8",
+               "architecture" : "x86_64",
+               "modelUTI" : "com.apple.ipad-pro-12point9-6th-1",
+               "modelName" : "iPad Pro (12.9-inch) (6th generation)",
+               "name" : "iPad Pro (12.9-inch) (6th generation)",
+               "ignored" : false
+             }
+           ]
+
+           2023-07-19 17:36:55.669 xcdevice[25178:187454] DVTCoreDeviceEnabledState: DVTCoreDeviceEnabledState_Disabled set via user default (DVTEnableCoreDevice=disabled)
+[   +1 ms] Error: iPhone de Renan is not connected. Xcode will continue when iPhone de Renan is connected and unlocked. (code -13)
+[   +6 ms] Connected devices:
+[   +1 ms] ro.hardware = qcom
+[  +53 ms] SM A207M (mobile)      • R9QMB00BRNP                          • android-arm64  • Android 11 (API 30)
+[        ] iPhone 14 Pro (mobile) • 530F6732-A861-4147-9FFD-71BF3BB1F4BD • ios            • com.apple.CoreSimulator.SimRuntime.iOS-16-4 (simulator)
+[        ] macOS (desktop)        • macos                                • darwin-x64     • macOS 13.4 22F66 darwin-x64
+[        ] Chrome (web)           • chrome                               • web-javascript • Google Chrome 114.0.5735.198
+[        ] [1]: SM A207M (R9QMB00BRNP)
+[        ] [2]: iPhone 14 Pro (530F6732-A861-4147-9FFD-71BF3BB1F4BD)
+[        ] [3]: macOS (macos)
+[        ] [4]: Chrome (chrome)
+[   +1 ms] Please choose one (or "q" to quit)
+[        ] : 
+[+8772 ms] Please choose one (or "q" to quit)
+[        ] : 
