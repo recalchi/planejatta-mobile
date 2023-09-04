@@ -5,9 +5,9 @@
 
     <application
         android:usesCleartextTraffic="true"
-        android:label="webview_app"
+        android:label="Planejatta Invest"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher"> 
+        android:icon="@mipmap/icone_app"> 
         
         <activity
             android:name=".MainActivity"

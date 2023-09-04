@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'package:flutter/services.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'WebView App',
       home: WebViewPage(),
+      debugShowCheckedModeBanner: false, // Remove a faixa de "debug"
     );
   }
 }
@@ -19,10 +20,10 @@ class WebViewPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
+
     return Scaffold(
-      appBar: AppBar(
-        title: Text('WebView App'),
-      ),
+      // AppBar removido
       body: _buildWebView(),
     );
   }
