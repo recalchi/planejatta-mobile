@@ -1,8 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:flutter/services.dart';
+import 'package:permission_handler/permission_handler.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding
+      .ensureInitialized(); // Isso é necessário quando você chama funções assíncronas antes do runApp
+  await requestPermissions();
+  runApp(MyApp());
+}
+
+Future<void> requestPermissions() async {
+  final status = await Permission.photos.status;
+  print("Permissão de fotos: $status");
+  if (status.isDenied) {
+    // O usuário negou a permissão. Você pode mostrar um aviso ou algo similar aqui.
+  }
+}
 
 class MyApp extends StatelessWidget {
   @override
