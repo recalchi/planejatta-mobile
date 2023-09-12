@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:webview_app/main.dart';
+import '../lib/main.dart';
 
 void main() {
   testWidgets('WebViewPage smoke test', (WidgetTester tester) async {
