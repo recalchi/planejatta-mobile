@@ -32,8 +32,7 @@
 		<dict>
 			<key>planejattainvest.com</key>
 			<dict>
-				<key>NSExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
+				<!-- Permite carregar subdomínios -->
 				<key>NSIncludesSubdomains</key>
 				<true/>
 			</dict>

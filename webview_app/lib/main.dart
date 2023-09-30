@@ -38,7 +38,7 @@ class _WebViewPageState extends State<WebViewPage> {
     return Scaffold(
       body: InAppWebView(
         initialUrlRequest:
-            URLRequest(url: Uri.parse('http://planejattainvest.com:5000/')),
+            URLRequest(url: Uri.parse('https://planejattainvest.com/')),
         onWebViewCreated: (InAppWebViewController controller) {
           webViewController = controller;
         },
